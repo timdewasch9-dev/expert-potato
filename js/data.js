@@ -15,7 +15,7 @@
 
 window.SITE = {
   name: "Tim De Wasch",
-  role: "Architect",
+  role: "Architecture Graduate",
   tagline: "Architecture across scales",
   email: "timdewasch9@gmail.com",
   phone: "+32 495 17 28 33",
@@ -29,10 +29,10 @@ window.SITE = {
   // ---- About page -----------------------------------------------------------
   about: {
     intro: [
-      "I'm Tim De Wasch, an architect based between Ghent and Bruges, Belgium. I hold a professional bachelor in applied architecture from Howest, Bruges, and a master of architecture from KU Leuven, Ghent, with an Erasmus exchange at ISCTE in Lisbon.",
+      "I'm Tim De Wasch, an architecture graduate based between Ghent and Bruges, Belgium. I hold a professional bachelor in applied architecture from Howest, Bruges, and a master of architecture from KU Leuven, Ghent, with an Erasmus exchange at ISCTE in Lisbon.",
       "My work moves from concept to detail and across scales, from sensory, material-driven research to urban landscape and public space. I'm drawn to projects that work with what already exists: reused materials, living surfaces, and architecture that grows and changes over time. Whether the subject is a single dining chamber or a flooded riverbank, I try to design from the same starting point, paying close attention to how a place is actually inhabited before deciding what it should become.",
       "That attention shows up at every scale. At the macro level it means reading a site's history, its materials and its climate before drawing a single line. At the meso level it means designing for the body: how someone moves through a threshold, how light and sound shape a room before furniture does. At the micro level it means treating texture, smell and the life cycle of a material as design decisions in their own right, not afterthoughts.",
-      "Outside of studio work, I've taken part in international workshops on urban resilience, completed internships spanning technical drawing and site supervision, and built a habit of testing ideas physically through models, 3D prints and short films alongside the usual drawings and renders. I'm currently looking for opportunities to bring that same curiosity to a practice or a collaborative project.",
+      "Outside of studio work, I've taken part in international workshops on urban resilience, completed internships spanning technical drawing and site supervision, and built a habit of testing ideas physically through models, 3D prints and short films alongside the usual drawings and renders. I'm currently looking for an internship to bring that same curiosity to a practice or a collaborative project.",
     ],
     meta: "Born 23.11.1999, Bruges · Driver's licence B",
     education: [
