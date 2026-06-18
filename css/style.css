@@ -291,7 +291,7 @@ main.page { padding-top: var(--header-h); }
 .project-intro p:first-child { font-family: var(--font-serif); font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.4; }
 
 .project-images { display: grid; gap: clamp(1rem, 3vw, 2.5rem); padding-bottom: clamp(3rem, 8vh, 6rem); }
-.project-images img { width: 100%; background: var(--paper-2); filter: grayscale(100%); cursor: zoom-in; transition: filter 0.5s var(--ease); }
+.project-images img { width: 100%; max-height: 80vh; object-fit: cover; background: var(--paper-2); filter: grayscale(100%); cursor: zoom-in; transition: filter 0.5s var(--ease); }
 .project-images img:hover { filter: grayscale(0%); }
 
 .project-nav {
