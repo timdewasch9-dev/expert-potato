@@ -19,7 +19,9 @@ Open it in any text editor; it is heavily commented.
 
 ### Your details
 At the top, `window.SITE` holds your name, role, tagline, email, phone,
-location, social links, and bio paragraphs.
+location, and social links. The `about` object holds the About page content:
+`intro` paragraphs, plus `education`, `experience`, `skills`, `other`, and
+`languages` lists that render the CV section automatically.
 
 ### Adding / editing projects
 Inside `window.PROJECTS`, each `{ ... }` block is one project. To add a project,

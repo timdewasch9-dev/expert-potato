@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="through the wall">
+  <rect width="1600" height="1100" fill="#ededed"/>
+  <rect x="66.5" y="66.5" width="1467" height="967" fill="none" stroke="#9a9a9a" stroke-width="1" opacity="0.5"/>
+  <line x1="800" y1="66" x2="800" y2="1034" stroke="#9a9a9a" stroke-width="1" opacity="0.16"/>
+  <line x1="66" y1="550" x2="1534" y2="550" stroke="#9a9a9a" stroke-width="1" opacity="0.16"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    font-family="Helvetica, Arial, sans-serif" font-size="50"
+    letter-spacing="1.5" fill="#9a9a9a">through the wall</text>
+</svg>

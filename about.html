@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Jane Doe</title>
-  <meta name="description" content="About Jane Doe, architect.">
+  <title>About — Tim De Wasch</title>
+  <meta name="description" content="About Tim De Wasch, architect based in Ghent and Bruges, Belgium.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -18,14 +18,16 @@
   <main class="page">
     <div class="wrap">
       <span class="eyebrow">About</span>
-      <h1 class="page-title" data-about-name>Jane Doe</h1>
+      <h1 class="page-title" data-about-name>Tim De Wasch</h1>
     </div>
 
     <div class="wrap">
       <div class="about-layout">
-        <img class="portrait reveal" src="assets/img/portrait.svg" alt="Portrait of Jane Doe">
+        <img class="portrait reveal" src="assets/img/portrait.svg" alt="Portrait of Tim De Wasch">
         <div class="about-body reveal" data-about-body></div>
       </div>
+
+      <div class="cv reveal" data-cv></div>
     </div>
   </main>
 
@@ -36,14 +38,43 @@
   <script>
     (function () {
       var S = window.SITE || {};
-      var name = document.querySelector("[data-about-name]");
-      if (name && S.name) name.textContent = S.name;
+      var A = S.about || {};
+
+      var nameEl = document.querySelector("[data-about-name]");
+      if (nameEl && S.name) nameEl.textContent = S.name;
+
       var body = document.querySelector("[data-about-body]");
       if (body) {
         body.innerHTML =
-          (S.about || []).map(function (p) { return "<p>" + p + "</p>"; }).join("") +
+          (A.intro || []).map(function (p) { return "<p>" + p + "</p>"; }).join("") +
+          (A.meta ? '<p class="about-meta">' + A.meta + "</p>" : "") +
           (S.cv ? '<a class="btn" href="' + S.cv + '" target="_blank" rel="noopener">Download CV</a>' : "");
       }
+
+      function rows(list) {
+        return (list || []).map(function (r) {
+          return '<div class="cv-row"><span class="yr">' + r.years + '</span>' +
+            '<span class="pl">' + r.place + (r.detail ? "<small>" + r.detail + "</small>" : "") + "</span></div>";
+        }).join("");
+      }
+
+      var blocks = [];
+      if (A.education) blocks.push("<div class='cv-block'><h2>Education</h2>" + rows(A.education) + "</div>");
+      if (A.experience) blocks.push("<div class='cv-block'><h2>Experience</h2>" + rows(A.experience) + "</div>");
+      if (A.skills) {
+        var tags = A.skills.map(function (s) { return "<span>" + s + "</span>"; }).join("");
+        var other = (A.other || []).map(function (s) { return "<span>" + s + "</span>"; }).join("");
+        blocks.push("<div class='cv-block'><h2>Software</h2><div class='cv-tags'>" + tags + "</div>" +
+          (other ? "<h2 style='margin-top:2rem'>Other</h2><div class='cv-tags'>" + other + "</div>" : "") + "</div>");
+      }
+      if (A.languages) {
+        var langs = A.languages.map(function (l) {
+          return "<li>" + l.lang + "<em>" + l.level + "</em></li>";
+        }).join("");
+        blocks.push("<div class='cv-block'><h2>Languages</h2><ul class='cv-langs'>" + langs + "</ul></div>");
+      }
+      var cv = document.querySelector("[data-cv]");
+      if (cv) cv.innerHTML = blocks.join("");
     })();
   </script>
 </body>
