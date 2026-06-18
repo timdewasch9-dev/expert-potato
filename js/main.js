@@ -4,6 +4,22 @@
   const SITE = window.SITE || {};
   const PAGE = document.body.dataset.page || "";
 
+  /* ---- image fallback ----------------------------------------------------
+     The site points at your real .jpg images. Until you upload one, the
+     matching labelled .svg placeholder is shown instead. So you only ever
+     have to upload a file named like the placeholder — no code to edit. */
+  document.addEventListener(
+    "error",
+    function (e) {
+      const el = e.target;
+      if (el && el.tagName === "IMG" && /\.jpe?g$/i.test(el.getAttribute("src") || "") && !el.dataset.fellBack) {
+        el.dataset.fellBack = "1";
+        el.src = el.getAttribute("src").replace(/\.jpe?g$/i, ".svg");
+      }
+    },
+    true // capture: image load errors don't bubble
+  );
+
   /* ---- inject header ---- */
   const header = document.querySelector("[data-header]");
   if (header) {

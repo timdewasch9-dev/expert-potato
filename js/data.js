@@ -9,7 +9,7 @@
  *    2. Give it a unique "slug" (lowercase, dashes, no spaces).
  *    3. Put your images in  assets/img/  and reference them by filename.
  *
- *  Images can be .jpg / .png / .webp / .svg — just match the filename.
+ *  Images can be .jpg / .png / .webp — just match the filename.
  *  (The grey labelled placeholders tell you which drawing/render goes where.)
  * ========================================================================== */
 
@@ -63,7 +63,7 @@ window.PROJECTS = [
     location: "Ghent, BE",
     year: "2026",
     category: "Master thesis",
-    cover: "assets/img/mise-en-space-cover.svg",
+    cover: "assets/img/mise-en-space-cover.jpg",
     description: [
       "A single enclosed dining chamber becomes a design laboratory. The question is how deliberately architecture can shape the way we perceive — not as a backdrop to experience, but as its active author.",
       "Mise en space unfolds across three scales. At the macro scale, spatial choreography begins before the meal: threshold compression, acoustic absorption, light sequencing, the atmosphere of materials. At the meso scale the body becomes the instrument — orientation, proximity and temporal perception shaping how space is felt from the inside. At the micro scale a designed family of objects — a hydrogel plate with salt crystallisation, a coffee-wax candle, a yerba-mate bioplastic vessel and a SCOBY-leather coaster — investigates how texture, aroma and fermentation cross the boundary of the body directly.",
@@ -76,12 +76,12 @@ window.PROJECTS = [
       Work: "Individual",
     },
     images: [
-      "assets/img/mise-en-space-1.svg",
-      "assets/img/mise-en-space-2.svg",
-      "assets/img/mise-en-space-3.svg",
-      "assets/img/mise-en-space-4.svg",
-      "assets/img/mise-en-space-5.svg",
-      "assets/img/mise-en-space-6.svg",
+      "assets/img/mise-en-space-1.jpg",
+      "assets/img/mise-en-space-2.jpg",
+      "assets/img/mise-en-space-3.jpg",
+      "assets/img/mise-en-space-4.jpg",
+      "assets/img/mise-en-space-5.jpg",
+      "assets/img/mise-en-space-6.jpg",
     ],
   },
   {
@@ -90,7 +90,7 @@ window.PROJECTS = [
     location: "Arantzazu, Basque Country, ES",
     year: "2025",
     category: "Artists' residence",
-    cover: "assets/img/soft-parasite-cover.svg",
+    cover: "assets/img/soft-parasite-cover.jpg",
     description: [
       "At the Santuario de Nuestra Señora de Arantzazu, an existing underground concrete bunker becomes an artists' residence. Rather than erasing what is already there, soft parasite attaches itself lightly and reversibly to the bones of the existing structure — something that grows in the shadow of rock.",
       "A wooden column matrix gives rhythm to the plan without closing it off, allowing spaces to shift between day and night, between solitude and shared life. Box-in-box configurations let living and working overlap and separate again. Shoji-inspired translucent partitions filter light without cutting it, dividing without isolating.",
@@ -103,10 +103,10 @@ window.PROJECTS = [
       Work: "With Renee Quataert",
     },
     images: [
-      "assets/img/soft-parasite-1.svg",
-      "assets/img/soft-parasite-2.svg",
-      "assets/img/soft-parasite-3.svg",
-      "assets/img/soft-parasite-4.svg",
+      "assets/img/soft-parasite-1.jpg",
+      "assets/img/soft-parasite-2.jpg",
+      "assets/img/soft-parasite-3.jpg",
+      "assets/img/soft-parasite-4.jpg",
     ],
   },
   {
@@ -115,7 +115,7 @@ window.PROJECTS = [
     location: "Vooruit, Ghent, BE",
     year: "2025",
     category: "Acoustic intervention",
-    cover: "assets/img/resonant-growth-cover.svg",
+    cover: "assets/img/resonant-growth-cover.jpg",
     description: [
       "In a narrow alleyway beside the Vooruit in Ghent, noise is constant. Rather than blocking it, resonant growth meets it slowly, materially, from the ground up.",
       "A layered acoustic panel of 3D-printed clay, porous hempcrete and a plywood backing lines the passage. The textured clay surface scatters sound, the hempcrete absorbs it, and the wooden backing holds everything together and returns a controlled reflection. The result is not silence but a gradual softening — a shift in atmosphere as you move through.",
@@ -128,11 +128,11 @@ window.PROJECTS = [
       Work: "Individual",
     },
     images: [
-      "assets/img/resonant-growth-1.svg",
-      "assets/img/resonant-growth-2.svg",
-      "assets/img/resonant-growth-3.svg",
-      "assets/img/resonant-growth-4.svg",
-      "assets/img/resonant-growth-5.svg",
+      "assets/img/resonant-growth-1.jpg",
+      "assets/img/resonant-growth-2.jpg",
+      "assets/img/resonant-growth-3.jpg",
+      "assets/img/resonant-growth-4.jpg",
+      "assets/img/resonant-growth-5.jpg",
     ],
   },
   {
@@ -141,7 +141,7 @@ window.PROJECTS = [
     location: "Reus, Tarragona, ES",
     year: "2025",
     category: "Urban / flood landscape",
-    cover: "assets/img/raw-25-cover.svg",
+    cover: "assets/img/raw-25-cover.jpg",
     description: [
       "Along the Riera de l'Abeurada on the eastern edge of Reus, a watercourse that is almost entirely dry cuts through a landscape that has lost coherence. Residential fabric, industrial zones and degraded open land accumulate at the city's edge without connecting to each other or to what lies beyond.",
       "Rather than channelling water away, the project embraces it and slows it down, distributing its presence across four zones that stitch the city back to its landscape. Zone I recovers the stream as a slow river; Zone II turns a flood-prone residential edge into a floodable neighbourhood of promenade and wetland; Zone III reimagines the Tecnoparc as a productive landscape of water basins, greenhouses and irrigated fields; Zone IV establishes a sanatorium park beside the Hospital de Sant Joan.",
@@ -154,10 +154,10 @@ window.PROJECTS = [
       Work: "Group of six",
     },
     images: [
-      "assets/img/raw-25-1.svg",
-      "assets/img/raw-25-2.svg",
-      "assets/img/raw-25-3.svg",
-      "assets/img/raw-25-4.svg",
+      "assets/img/raw-25-1.jpg",
+      "assets/img/raw-25-2.jpg",
+      "assets/img/raw-25-3.jpg",
+      "assets/img/raw-25-4.jpg",
     ],
   },
   {
@@ -166,7 +166,7 @@ window.PROJECTS = [
     location: "Zevergem, Ghent, BE",
     year: "2023",
     category: "House",
-    cover: "assets/img/hexenhaus-2-cover.svg",
+    cover: "assets/img/hexenhaus-2-cover.jpg",
     description: [
       "On the edge of Zevergem, adjacent to a highway, hexenhaus 2.0 begins with stone and ends with light. A massive natural-stone wall runs along the northern boundary, absorbing noise and anchoring the building to the ground. From there the structure gradually opens: timber takes over, ceilings rise, and the southern facade unfolds toward the landscape.",
       "The transition from enclosure to openness is the project's central movement. A raised walkway runs along a central void, connecting levels while keeping the interior visually continuous. Geometric cuts in the bedroom walls — triangles and half-moons — let light and sightlines travel freely through the house.",
@@ -179,10 +179,10 @@ window.PROJECTS = [
       Work: "Individual",
     },
     images: [
-      "assets/img/hexenhaus-2-1.svg",
-      "assets/img/hexenhaus-2-2.svg",
-      "assets/img/hexenhaus-2-3.svg",
-      "assets/img/hexenhaus-2-4.svg",
+      "assets/img/hexenhaus-2-1.jpg",
+      "assets/img/hexenhaus-2-2.jpg",
+      "assets/img/hexenhaus-2-3.jpg",
+      "assets/img/hexenhaus-2-4.jpg",
     ],
   },
   {
@@ -191,7 +191,7 @@ window.PROJECTS = [
     location: "Marvila, Lisbon, PT",
     year: "2025",
     category: "Cultural public space",
-    cover: "assets/img/reculture-cover.svg",
+    cover: "assets/img/reculture-cover.jpg",
     description: [
       "In the Marvila district of Lisbon, a disjointed stretch of public space runs from the Braço da Prata train station into a neighbourhood where galleries, theatres and community spaces exist side by side without really connecting. Each serves its own audience; nothing holds them together.",
       "Reculture proposes a cultural axis that does. A series of modular interventions lines the route: a gallery wall of reused brick, an amphitheatre that shifts from daytime gathering space to evening performance venue, a circular conversation bench, a rainwater-collection installation and a playground-like composition drawn from Aldo van Eyck. Each piece works on its own; together they make a corridor that changes with the day and the season.",
@@ -204,8 +204,8 @@ window.PROJECTS = [
       Work: "With Renee Quataert",
     },
     images: [
-      "assets/img/reculture-1.svg",
-      "assets/img/reculture-2.svg",
+      "assets/img/reculture-1.jpg",
+      "assets/img/reculture-2.jpg",
     ],
   },
   {
@@ -214,7 +214,7 @@ window.PROJECTS = [
     location: "Nieuwland, Ghent, BE",
     year: "2024",
     category: "Bachelor thesis",
-    cover: "assets/img/through-the-wall-cover.svg",
+    cover: "assets/img/through-the-wall-cover.jpg",
     description: [
       "Nieuwland, in Ghent, has green space but not enough of it, and shared meeting places but not in the right spots. The communities living there — local residents, multicultural families and soon a new generation of technical-school students — pass each other more than they meet.",
       "Through the wall draws a new axis through the site, physically opening up the neighbourhood and guiding movement through it. Where the axis lands, a brick tower rises from reclaimed material found on site, becoming a landmark that is also a meeting point. Around it four zones take shape: quiet green landscape, active open space, a commercial strip and a workshop zone. The focus falls on the workshops, where students and residents can learn, make, exchange and sell together.",
@@ -227,10 +227,10 @@ window.PROJECTS = [
       Work: "With Sanja Cooreman",
     },
     images: [
-      "assets/img/through-the-wall-1.svg",
-      "assets/img/through-the-wall-2.svg",
-      "assets/img/through-the-wall-3.svg",
-      "assets/img/through-the-wall-4.svg",
+      "assets/img/through-the-wall-1.jpg",
+      "assets/img/through-the-wall-2.jpg",
+      "assets/img/through-the-wall-3.jpg",
+      "assets/img/through-the-wall-4.jpg",
     ],
   },
 ];
