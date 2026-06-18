@@ -242,9 +242,10 @@ main.page { padding-top: var(--header-h); }
 
 .page-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-size: clamp(2.8rem, 8vw, 5.8rem);
   font-weight: 500;
-  line-height: 1;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
   padding: clamp(3rem, 10vh, 7rem) 0 0.5rem;
 }
 .eyebrow { font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-soft); }
@@ -257,9 +258,14 @@ main.page { padding-top: var(--header-h); }
   align-items: start;
   padding: clamp(2rem, 6vh, 4rem) 0 clamp(4rem, 10vh, 7rem);
 }
-.portrait { width: 100%; background: var(--paper-2); }
+.portrait {
+  width: 100%;
+  background: var(--paper-2);
+  transition: transform 1.1s var(--ease);
+}
+.about-layout:hover .portrait { transform: scale(1.015); }
 .about-body p { font-size: clamp(1rem, 1.3vw, 1.15rem); margin: 0 0 1.4rem; max-width: 56ch; }
-.about-body p:first-child { font-family: var(--font-serif); font-size: clamp(1.3rem, 2.2vw, 1.7rem); line-height: 1.4; color: var(--ink); }
+.about-body p:first-child { font-family: var(--font-serif); font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.35; color: var(--ink); }
 
 .about-meta { font-size: 0.78rem; letter-spacing: 0.06em; color: var(--ink-soft); margin: 1.5rem 0 0; }
 
@@ -275,7 +281,12 @@ main.page { padding-top: var(--header-h); }
   font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-soft);
   padding-bottom: 1rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--line);
 }
-.cv-row { display: grid; grid-template-columns: 90px 1fr; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
+.cv-row {
+  display: grid; grid-template-columns: 90px 1fr; gap: 1rem; padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: padding-left 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.cv-row:hover { padding-left: 0.5rem; border-color: var(--ink-soft); }
 .cv-row .yr { font-size: 0.75rem; letter-spacing: 0.06em; color: var(--ink-soft); padding-top: 0.15rem; }
 .cv-row .pl { font-size: 0.98rem; }
 .cv-row .pl small { display: block; color: var(--ink-soft); font-size: 0.85rem; margin-top: 0.2rem; }
@@ -283,7 +294,9 @@ main.page { padding-top: var(--header-h); }
 .cv-tags span {
   border: 1px solid var(--line); padding: 0.45rem 0.8rem;
   font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink);
+  transition: background 0.3s var(--ease), color 0.3s var(--ease);
 }
+.cv-tags span:hover { background: var(--ink); color: var(--paper); }
 .cv-langs { list-style: none; margin: 0; padding: 0; }
 .cv-langs li { display: flex; justify-content: space-between; padding: 0.7rem 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
 .cv-langs li em { font-style: normal; color: var(--ink-soft); font-size: 0.82rem; }
@@ -294,17 +307,19 @@ main.page { padding-top: var(--header-h); }
   padding: 0.85rem 1.6rem;
   border: 1px solid var(--ink);
   font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
-  transition: background 0.35s var(--ease), color 0.35s var(--ease);
+  transition: background 0.35s var(--ease), color 0.35s var(--ease), transform 0.35s var(--ease);
 }
-.btn:hover { background: var(--ink); color: var(--paper); }
+.btn:hover { background: var(--ink); color: var(--paper); transform: translateY(-2px); }
 
 /* ---------------------------------------------------------------- contact -- */
 .contact-layout { padding: clamp(2rem, 6vh, 4rem) 0 clamp(5rem, 12vh, 8rem); }
 .contact-list { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
 .contact-list li {
   display: flex; align-items: baseline; gap: 2rem;
-  padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+  padding: 1.6rem 1rem; margin: 0 -1rem; border-bottom: 1px solid var(--line);
+  transition: background 0.4s var(--ease), padding-left 0.4s var(--ease);
 }
+.contact-list li:hover { background: var(--paper-2); padding-left: 1.5rem; }
 .contact-list li span {
   flex: 0 0 130px; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft);
 }
@@ -312,7 +327,7 @@ main.page { padding-top: var(--header-h); }
   font-family: var(--font-serif); font-size: clamp(1.3rem, 3vw, 2.1rem); position: relative;
 }
 .contact-list li a::after {
-  content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px;
+  content: ""; position: absolute; left: 0; bottom: -0.2rem; width: 100%; height: 1px;
   background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease);
 }
 .contact-list li a:hover::after { transform: scaleX(1); }
