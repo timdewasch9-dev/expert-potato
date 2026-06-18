@@ -31,7 +31,7 @@
     .map((img) => (typeof img === "string" ? { src: img } : img))
     .map(
       (img) => `
-      <figure class="project-image${img.main ? " is-main" : ""}">
+      <figure class="project-image${img.main ? " is-main" : ""}${img.fit === "contain" ? " is-contain" : ""}">
         <img src="${img.src}" alt="${img.title || project.title}" loading="lazy">
         ${img.title ? `<figcaption>${img.title}</figcaption>` : ""}
       </figure>`

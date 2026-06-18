@@ -392,6 +392,7 @@ main.page { padding-top: var(--header-h); }
 .project-image:not(.is-main) img { aspect-ratio: 4 / 3; }
 .project-images img:hover { transform: scale(1.012); }
 .project-image.is-main img { max-height: 92vh; aspect-ratio: auto; }
+.project-image.is-contain img { object-fit: contain; background: var(--paper-2); }
 .project-image figcaption {
   margin-top: 0.7rem;
   font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
