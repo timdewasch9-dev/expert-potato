@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://timdewasch9-dev.github.io/expert-potato/sitemap.xml

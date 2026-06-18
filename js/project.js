@@ -16,6 +16,35 @@
 
   document.title = `${project.title} · ${(window.SITE && window.SITE.name) || "Portfolio"}`;
 
+  const pageUrl = `https://timdewasch9-dev.github.io/expert-potato/project.html?p=${encodeURIComponent(project.slug)}`;
+  const summary = (project.description && project.description[0]) || project.title;
+  const ogImage = `https://timdewasch9-dev.github.io/expert-potato/${project.cover}`;
+  const setMeta = (selector, attr, content) => {
+    let el = document.querySelector(selector);
+    if (!el) {
+      const [, name, value] = selector.match(/meta\[(\w+)="([^"]+)"\]/);
+      el = document.createElement("meta");
+      el.setAttribute(name, value);
+      document.head.appendChild(el);
+    }
+    el.setAttribute(attr, content);
+  };
+  setMeta('meta[name="description"]', "content", summary);
+  setMeta('meta[property="og:title"]', "content", document.title);
+  setMeta('meta[property="og:description"]', "content", summary);
+  setMeta('meta[property="og:url"]', "content", pageUrl);
+  setMeta('meta[property="og:image"]', "content", ogImage);
+  setMeta('meta[name="twitter:title"]', "content", document.title);
+  setMeta('meta[name="twitter:description"]', "content", summary);
+  setMeta('meta[name="twitter:image"]', "content", ogImage);
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.appendChild(canonical);
+  }
+  canonical.href = pageUrl;
+
   const facts = project.facts || {};
   const factsHtml = Object.keys(facts).length
     ? `<dl class="project-facts">${Object.entries(facts)
