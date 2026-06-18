@@ -52,9 +52,17 @@
 
     <section class="project-images wrap">${images}</section>
 
-    <nav class="project-nav wrap">
-      <a class="prev" href="project.html?p=${encodeURIComponent(prev.slug)}">Previous<span>${prev.title}</span></a>
-      <a class="next" href="project.html?p=${encodeURIComponent(next.slug)}">Next<span>${next.title}</span></a>
+    <nav class="project-nav">
+      <a class="prev" href="project.html?p=${encodeURIComponent(prev.slug)}">
+        <img class="nav-bg" src="${prev.cover}" alt="">
+        <span class="nav-label">Previous</span>
+        <span class="nav-title">${prev.title}</span>
+      </a>
+      <a class="next" href="project.html?p=${encodeURIComponent(next.slug)}">
+        <img class="nav-bg" src="${next.cover}" alt="">
+        <span class="nav-label">Next</span>
+        <span class="nav-title">${next.title}</span>
+      </a>
     </nav>`;
 
   if (window.observeReveals) window.observeReveals();

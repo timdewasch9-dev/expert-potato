@@ -20,7 +20,10 @@
       const n = String(i + 1).padStart(2, "0");
       return `
         <a class="work-item reveal" href="project.html?p=${encodeURIComponent(p.slug)}">
-          <figure class="work-figure"><img src="${p.cover}" alt="${p.title}" loading="lazy"></figure>
+          <figure class="work-figure">
+            <img src="${p.cover}" alt="${p.title}" loading="lazy">
+            <span class="work-view">View project <svg viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.4"/></svg></span>
+          </figure>
           <div class="work-meta">
             <h3>${p.title}</h3>
             <span class="work-loc">${[p.category, p.year].filter(Boolean).join(" · ")}</span>
