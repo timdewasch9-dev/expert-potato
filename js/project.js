@@ -14,7 +14,7 @@
     return;
   }
 
-  document.title = `${project.title} — ${(window.SITE && window.SITE.name) || "Portfolio"}`;
+  document.title = `${project.title} · ${(window.SITE && window.SITE.name) || "Portfolio"}`;
 
   const facts = project.facts || {};
   const factsHtml = Object.keys(facts).length
@@ -28,7 +28,14 @@
     .join("");
 
   const images = (project.images || [])
-    .map((src) => `<img src="${src}" alt="${project.title}" loading="lazy">`)
+    .map((img) => (typeof img === "string" ? { src: img } : img))
+    .map(
+      (img) => `
+      <figure class="project-image${img.main ? " is-main" : ""}">
+        <img src="${img.src}" alt="${img.title || project.title}" loading="lazy">
+        ${img.title ? `<figcaption>${img.title}</figcaption>` : ""}
+      </figure>`
+    )
     .join("");
 
   const prev = PROJECTS[(idx - 1 + PROJECTS.length) % PROJECTS.length];

@@ -9,7 +9,7 @@
       <img class="hero-bg" src="${(PROJECTS[0] && PROJECTS[0].cover) || "assets/img/hero.svg"}" alt="">
       <div class="hero-inner">
         <h1>${SITE.tagline || "Selected Works"}</h1>
-        <p class="hero-sub">${SITE.name || ""}${SITE.location ? " — " + SITE.location : ""}</p>
+        <p class="hero-sub">${SITE.name || ""}${SITE.location ? " · " + SITE.location : ""}</p>
       </div>
       <span class="scroll-cue">Scroll</span>`;
   }
@@ -25,7 +25,7 @@
             <h3>${p.title}</h3>
             <span class="work-loc">${[p.category, p.year].filter(Boolean).join(" · ")}</span>
           </div>
-          <span class="work-index">${n} — ${p.location || ""}</span>
+          <span class="work-index">${n} · ${p.location || ""}</span>
         </a>`;
     }).join("");
 

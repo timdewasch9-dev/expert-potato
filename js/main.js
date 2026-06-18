@@ -7,7 +7,7 @@
   /* ---- image fallback ----------------------------------------------------
      The site points at your real .jpg images. Until you upload one, the
      matching labelled .svg placeholder is shown instead. So you only ever
-     have to upload a file named like the placeholder — no code to edit. */
+     have to upload a file named like the placeholder, no code to edit. */
   document.addEventListener(
     "error",
     function (e) {
