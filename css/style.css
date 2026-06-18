@@ -341,7 +341,7 @@ main.page { padding-top: calc(var(--header-h) + env(safe-area-inset-top)); }
 .contact-list li a:hover::after { transform: scaleX(1); }
 
 /* -------------------------------------------------------- project detail -- */
-.project-hero { padding: clamp(3rem, 10vh, 7rem) 0 clamp(1.5rem, 4vh, 3rem); border-bottom: 1px solid var(--line); }
+.project-hero { padding-top: clamp(3rem, 10vh, 7rem); padding-bottom: clamp(1.5rem, 4vh, 3rem); border-bottom: 1px solid var(--line); }
 .project-hero h1 { font-family: var(--font-serif); font-size: clamp(2.4rem, 7vw, 5rem); font-weight: 500; line-height: 1; margin-top: 0.5rem; }
 .project-facts {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -350,7 +350,7 @@ main.page { padding-top: calc(var(--header-h) + env(safe-area-inset-top)); }
 .project-facts dt { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.35rem; }
 .project-facts dd { margin: 0; font-size: 0.95rem; }
 
-.project-intro { padding: clamp(2.5rem, 7vh, 5rem) 0; }
+.project-intro { padding-top: clamp(2.5rem, 7vh, 5rem); padding-bottom: clamp(2.5rem, 7vh, 5rem); }
 .project-intro p { font-size: clamp(1.1rem, 1.6vw, 1.35rem); max-width: 60ch; margin: 0 0 1.4rem; }
 .project-intro p:first-child { font-family: var(--font-serif); font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.4; }
 
