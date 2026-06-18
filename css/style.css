@@ -321,6 +321,29 @@ main.page { padding-top: calc(var(--header-h) + env(safe-area-inset-top)); }
 
 /* ---------------------------------------------------------------- contact -- */
 .contact-layout { padding: clamp(2rem, 6vh, 4rem) 0 clamp(5rem, 12vh, 8rem); }
+.mail-cta {
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: clamp(1.6rem, 4vh, 2.4rem) clamp(1.6rem, 4vw, 2.4rem);
+  border: 1px solid var(--ink);
+  margin-bottom: clamp(2rem, 5vh, 3rem);
+  transition: background 0.4s var(--ease), color 0.4s var(--ease);
+}
+.mail-cta:hover { background: var(--ink); color: var(--paper); }
+.mail-icon {
+  flex: 0 0 auto;
+  width: clamp(2.6rem, 5vw, 3.4rem); height: clamp(2.6rem, 5vw, 3.4rem);
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid currentColor; border-radius: 50%;
+}
+.mail-icon svg { width: 46%; height: 46%; }
+.mail-label {
+  display: block; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft);
+  transition: color 0.4s var(--ease);
+}
+.mail-cta:hover .mail-label { color: inherit; opacity: 0.75; }
+.mail-addr {
+  display: block; font-family: var(--font-serif); font-size: clamp(1.3rem, 3vw, 2rem); margin-top: 0.3rem;
+}
 .contact-list { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
 .contact-list li {
   display: flex; align-items: baseline; gap: 2rem;

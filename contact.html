@@ -22,6 +22,15 @@
     </div>
 
     <div class="wrap contact-layout">
+      <a class="mail-cta" data-mail-cta href="#">
+        <span class="mail-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span>
+          <span class="mail-label">Send an email</span>
+          <span class="mail-addr" data-mail-addr></span>
+        </span>
+      </a>
       <ul class="contact-list" data-contact></ul>
     </div>
   </main>
@@ -33,6 +42,16 @@
   <script>
     (function () {
       var S = window.SITE || {};
+
+      var mailCta = document.querySelector("[data-mail-cta]");
+      var mailAddr = document.querySelector("[data-mail-addr]");
+      if (mailCta && S.email) {
+        mailCta.href = "mailto:" + S.email;
+        if (mailAddr) mailAddr.textContent = S.email;
+      } else if (mailCta) {
+        mailCta.remove();
+      }
+
       var rows = [];
       if (S.email) rows.push(["Email", '<a href="mailto:' + S.email + '">' + S.email + "</a>"]);
       if (S.phone) rows.push(["Phone", '<a href="tel:' + S.phone.replace(/[^+\d]/g, "") + '">' + S.phone + "</a>"]);
