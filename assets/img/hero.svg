@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="HERO IMAGE">
+  <rect width="2400" height="1350" fill="#eaeaea"/>
+  <rect x="81.5" y="81.5" width="2237" height="1187" fill="none" stroke="#9a9a9a" stroke-width="1" opacity="0.5"/>
+  <line x1="1200" y1="81" x2="1200" y2="1269" stroke="#9a9a9a" stroke-width="1" opacity="0.18"/>
+  <line x1="81" y1="675" x2="2319" y2="675" stroke="#9a9a9a" stroke-width="1" opacity="0.18"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    font-family="Helvetica, Arial, sans-serif" font-size="68"
+    letter-spacing="2" fill="#9a9a9a">HERO IMAGE</text>
+</svg>

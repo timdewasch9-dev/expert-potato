@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Jane Doe</title>
+  <meta name="description" content="Get in touch with Jane Doe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact" class="solid-header">
+
+  <header class="site-header" data-header></header>
+
+  <main class="page">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1 class="page-title">Get in touch</h1>
+    </div>
+
+    <div class="wrap contact-layout">
+      <ul class="contact-list" data-contact></ul>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var S = window.SITE || {};
+      var rows = [];
+      if (S.email) rows.push(["Email", '<a href="mailto:' + S.email + '">' + S.email + "</a>"]);
+      if (S.phone) rows.push(["Phone", '<a href="tel:' + S.phone.replace(/[^+\d]/g, "") + '">' + S.phone + "</a>"]);
+      if (S.location) rows.push(["Location", '<span class="val">' + S.location + "</span>"]);
+      (S.social || []).forEach(function (s) {
+        rows.push([s.label, '<a href="' + s.url + '" target="_blank" rel="noopener">' + (s.handle || s.label) + "</a>"]);
+      });
+      var ul = document.querySelector("[data-contact]");
+      if (ul) ul.innerHTML = rows.map(function (r) {
+        return "<li><span>" + r[0] + "</span>" + r[1] + "</li>";
+      }).join("");
+    })();
+  </script>
+</body>
+</html>

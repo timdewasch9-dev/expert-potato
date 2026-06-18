@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Jane Doe</title>
+  <meta name="description" content="About Jane Doe, architect.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about" class="solid-header">
+
+  <header class="site-header" data-header></header>
+
+  <main class="page">
+    <div class="wrap">
+      <span class="eyebrow">About</span>
+      <h1 class="page-title" data-about-name>Jane Doe</h1>
+    </div>
+
+    <div class="wrap">
+      <div class="about-layout">
+        <img class="portrait reveal" src="assets/img/portrait.svg" alt="Portrait of Jane Doe">
+        <div class="about-body reveal" data-about-body></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var S = window.SITE || {};
+      var name = document.querySelector("[data-about-name]");
+      if (name && S.name) name.textContent = S.name;
+      var body = document.querySelector("[data-about-body]");
+      if (body) {
+        body.innerHTML =
+          (S.about || []).map(function (p) { return "<p>" + p + "</p>"; }).join("") +
+          (S.cv ? '<a class="btn" href="' + S.cv + '" target="_blank" rel="noopener">Download CV</a>' : "");
+      }
+    })();
+  </script>
+</body>
+</html>

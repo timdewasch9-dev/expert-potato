@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img" aria-label="PORTRAIT">
+  <rect width="1000" height="1250" fill="#e9e9e9"/>
+  <rect x="60.5" y="60.5" width="879" height="1129" fill="none" stroke="#9a9a9a" stroke-width="1" opacity="0.5"/>
+  <line x1="500" y1="60" x2="500" y2="1190" stroke="#9a9a9a" stroke-width="1" opacity="0.18"/>
+  <line x1="60" y1="625" x2="940" y2="625" stroke="#9a9a9a" stroke-width="1" opacity="0.18"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    font-family="Helvetica, Arial, sans-serif" font-size="50"
+    letter-spacing="2" fill="#9a9a9a">PORTRAIT</text>
+</svg>
