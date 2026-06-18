@@ -49,8 +49,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; letter-spacing: -0.01em; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: max(0px, env(safe-area-inset-top)) var(--pad) 0;
-  height: calc(var(--header-h) + env(safe-area-inset-top));
+  padding: 0 var(--pad);
   z-index: 100;
   mix-blend-mode: difference;            /* near-invisible over any image */
   color: #fff;
@@ -243,7 +242,7 @@ body.solid-header .site-header { mix-blend-mode: normal; color: var(--ink); }
 }
 
 /* --------------------------------------------------------------- generic -- */
-main.page { padding-top: calc(var(--header-h) + env(safe-area-inset-top)); }
+main.page { padding-top: var(--header-h); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
 .narrow { max-width: 760px; }
@@ -446,8 +445,8 @@ main.page { padding-top: calc(var(--header-h) + env(safe-area-inset-top)); }
 .lightbox.open img { transform: scale(1); }
 .lightbox-close {
   position: absolute;
-  top: calc(1.5rem + env(safe-area-inset-top));
-  right: calc(1.5rem + env(safe-area-inset-right));
+  top: 1.5rem;
+  right: 1.5rem;
   color: #fff; font-size: 1.6rem; background: none; border: 0; cursor: pointer; line-height: 1;
   padding: 0.6rem;
 }
@@ -490,7 +489,7 @@ main.page { padding-top: calc(var(--header-h) + env(safe-area-inset-top)); }
 
   .nav-toggle { display: block; }
   .site-nav {
-    position: fixed; inset: calc(var(--header-h) + env(safe-area-inset-top)) 0 auto 0;
+    position: fixed; inset: var(--header-h) 0 auto 0;
     flex-direction: column; gap: 0;
     background: var(--paper); color: var(--ink);
     border-bottom: 1px solid var(--line);
