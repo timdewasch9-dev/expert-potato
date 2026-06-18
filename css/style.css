@@ -290,12 +290,27 @@ main.page { padding-top: var(--header-h); }
 .project-intro p { font-size: clamp(1.1rem, 1.6vw, 1.35rem); max-width: 60ch; margin: 0 0 1.4rem; }
 .project-intro p:first-child { font-family: var(--font-serif); font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.4; }
 
-.project-images { display: grid; gap: clamp(1rem, 3vw, 2.5rem); padding-bottom: clamp(3rem, 8vh, 6rem); }
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  padding-bottom: clamp(4rem, 10vh, 7rem);
+}
 .project-image { margin: 0; }
-.project-images img { width: 100%; max-height: 80vh; object-fit: cover; background: var(--paper-2); filter: grayscale(100%); cursor: zoom-in; transition: filter 0.5s var(--ease); }
-.project-images img:hover { filter: grayscale(0%); }
-.project-image.is-main img { max-height: 90vh; }
-.project-image figcaption { margin-top: 0.6rem; font-size: 0.75rem; letter-spacing: 0.06em; color: var(--ink-soft); }
+.project-image.is-main { grid-column: 1 / -1; }
+.project-images img {
+  width: 100%; max-height: 85vh; object-fit: cover;
+  background: var(--paper-2); filter: grayscale(100%);
+  cursor: zoom-in; transition: filter 0.6s var(--ease), transform 0.9s var(--ease);
+}
+.project-image:not(.is-main) img { aspect-ratio: 4 / 3; }
+.project-images img:hover { filter: grayscale(0%); transform: scale(1.015); }
+.project-image.is-main img { max-height: 92vh; aspect-ratio: auto; }
+.project-image figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-soft);
+}
 
 .project-nav {
   display: flex; justify-content: space-between; gap: 1rem;
