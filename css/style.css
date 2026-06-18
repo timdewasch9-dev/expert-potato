@@ -14,7 +14,7 @@
   --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 
   --maxw: 1400px;
-  --pad: clamp(1.25rem, 4vw, 4rem);
+  --pad: clamp(1.5rem, 4vw, 4rem);
   --header-h: 72px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -493,10 +493,20 @@ main.page { padding-top: var(--header-h); }
     flex-direction: column; gap: 0;
     background: var(--paper); color: var(--ink);
     border-bottom: 1px solid var(--line);
-    transform: translateY(-120%); transition: transform 0.45s var(--ease);
     padding: 1rem var(--pad) 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.35s var(--ease), transform 0.35s var(--ease), visibility 0s 0.35s;
   }
-  .site-header.nav-open .site-nav { transform: none; }
+  .site-header.nav-open .site-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+  }
   .site-header.nav-open { mix-blend-mode: normal; background: var(--paper); color: var(--ink); }
   .site-nav a { padding: 0.9rem 0; font-size: 0.8rem; border-bottom: 1px solid var(--line); }
   .site-nav a:last-child { border-bottom: 0; }
