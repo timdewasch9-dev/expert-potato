@@ -82,6 +82,7 @@ window.PROJECTS = [
       { src: "assets/img/mise-en-space-cover.jpg", title: "Methodology, concept drawing" },
       { src: "assets/img/mise-en-space-7.jpg", title: "Macro scale render, threshold" },
       { src: "assets/img/resonant-growth-6.jpg", title: "Macro scale render, corridor" },
+      { src: "assets/img/mise-en-space-1.jpg", title: "Macro scale sketch, entering the chamber" },
       { src: "assets/img/mise-en-space-3.jpg", title: "Meso diagram, meal as temporal sequence" },
       { src: "assets/img/mise-en-space-2.jpg", title: "Meso diagram, body orientation" },
       { src: "assets/img/mise-en-space-4.jpg", title: "Micro object, hydrogel dinnerset" },
@@ -174,33 +175,6 @@ window.PROJECTS = [
     ],
   },
   {
-    slug: "hexenhaus-2",
-    title: "hexenhaus 2.0",
-    location: "Zevergem, Ghent, BE",
-    year: "2023",
-    category: "House",
-    cover: "assets/img/hexenhaus-2-2.jpg",
-    description: [
-      "On the edge of Zevergem, adjacent to a highway, hexenhaus 2.0 begins with stone and ends with light. A massive natural-stone wall runs along the northern boundary, absorbing noise and anchoring the building to the ground. From there the structure gradually opens: timber takes over, ceilings rise, and the southern facade unfolds toward the landscape.",
-      "The transition from enclosure to openness is the project's central movement. A raised walkway runs along a central void, connecting levels while keeping the interior visually continuous. Geometric cuts in the bedroom walls (triangles and half-moons) let light and sightlines travel freely through the house.",
-      "Reinterpreting the tectonic playfulness of Peter and Alison Smithson's Hexenhaus within a contemporary rural setting.",
-    ],
-    facts: {
-      Programme: "4th semester bachelor",
-      University: "KU Leuven, St. Lucas Ghent",
-      Supervisor: "prof. Sarah Poot · prof. Arian Schelstraete",
-      Work: "Individual",
-    },
-    images: [
-      { src: "assets/img/hexenhaus-2-2.jpg", title: "Exterior render, deck and loggia", main: true },
-      { src: "assets/img/hexenhaus-2-1.jpg", title: "Fragment study, model 1/33" },
-      { src: "assets/img/through-the-wall-3.jpg", title: "Fragment drawing, structural axonometric" },
-      { src: "assets/img/hexenhaus-2-cover.jpg", title: "Site study, model 1/100" },
-      { src: "assets/img/through-the-wall-1.jpg", title: "Section, Hexenhaus, Hessen (DE)" },
-      { src: "assets/img/through-the-wall-2.jpg", title: "Section, Zevergem, Ghent (BE)" },
-    ],
-  },
-  {
     slug: "reculture",
     title: "reculture",
     location: "Marvila, Lisbon, PT",
@@ -252,4 +226,31 @@ window.PROJECTS = [
       { src: "assets/img/through-the-wall-9.jpg", title: "Workshop space, model 1/33" },
     ],
   },
-];
+
+  {
+    slug: "hexenhaus-2",
+    title: "hexenhaus 2.0",
+    location: "Zevergem, Ghent, BE",
+    year: "2023",
+    category: "House",
+    cover: "assets/img/hexenhaus-2-2.jpg",
+    description: [
+      "On the edge of Zevergem, adjacent to a highway, hexenhaus 2.0 begins with stone and ends with light. A massive natural-stone wall runs along the northern boundary, absorbing noise and anchoring the building to the ground. From there the structure gradually opens: timber takes over, ceilings rise, and the southern facade unfolds toward the landscape.",
+      "The transition from enclosure to openness is the project's central movement. A raised walkway runs along a central void, connecting levels while keeping the interior visually continuous. Geometric cuts in the bedroom walls (triangles and half-moons) let light and sightlines travel freely through the house.",
+      "Reinterpreting the tectonic playfulness of Peter and Alison Smithson's Hexenhaus within a contemporary rural setting.",
+    ],
+    facts: {
+      Programme: "4th semester bachelor",
+      University: "KU Leuven, St. Lucas Ghent",
+      Supervisor: "prof. Sarah Poot · prof. Arian Schelstraete",
+      Work: "Individual",
+    },
+    images: [
+      { src: "assets/img/hexenhaus-2-2.jpg", title: "Exterior render, deck and loggia", main: true },
+      { src: "assets/img/hexenhaus-2-1.jpg", title: "Fragment study, model 1/33" },
+      { src: "assets/img/through-the-wall-3.jpg", title: "Fragment drawing, structural axonometric" },
+      { src: "assets/img/hexenhaus-2-cover.jpg", title: "Site study, model 1/100" },
+      { src: "assets/img/through-the-wall-1.jpg", title: "Section, Hexenhaus, Hessen (DE)" },
+      { src: "assets/img/through-the-wall-2.jpg", title: "Section, Zevergem, Ghent (BE)" },
+    ],
+  },];
