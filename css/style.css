@@ -497,6 +497,16 @@ main.page { padding-top: var(--header-h); }
   .contact-list li { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
   .contact-list li span { flex: none; }
 
+  body[data-page="contact"] .page-title,
+  body[data-page="contact"] .eyebrow,
+  body[data-page="contact"] .contact-intro {
+    text-align: center;
+  }
+  body[data-page="contact"] .contact-intro { margin-left: auto; margin-right: auto; }
+  body[data-page="contact"] .mail-cta { flex-direction: column; align-items: center; text-align: center; }
+  body[data-page="contact"] .contact-list li { align-items: center; text-align: center; }
+  body[data-page="contact"] .contact-list { text-align: center; }
+
   .nav-toggle { display: block; }
   .site-nav {
     position: fixed; inset: var(--header-h) 0 auto 0;
