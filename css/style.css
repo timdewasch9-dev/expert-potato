@@ -322,7 +322,7 @@ main.page { padding-top: var(--header-h); }
 .btn:hover { background: var(--ink); color: var(--paper); transform: translateY(-2px); }
 
 /* ---------------------------------------------------------------- contact -- */
-.contact-layout { max-width: 640px; margin-left: 0; margin-right: auto; padding: clamp(2rem, 6vh, 4rem) 0 clamp(5rem, 12vh, 8rem); }
+.contact-layout { max-width: 700px; margin: 0 auto; padding: clamp(2rem, 6vh, 4rem) 0 clamp(5rem, 12vh, 8rem); }
 .contact-intro {
   font-family: var(--font-serif); font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 1.5;
   color: var(--ink-soft); max-width: 46ch; margin: 0.75rem 0 clamp(2rem, 5vh, 3rem);
