@@ -19,7 +19,7 @@ window.SITE = {
   tagline: "Architecture across scales",
   email: "timdewasch9@gmail.com",
   phone: "+32 495 17 28 33",
-  location: "Ghent · Bruges, Belgium",
+  location: "Ghent · Bruges · Belgium",
   social: [
     { label: "Instagram", handle: "@timnesty", url: "https://instagram.com/timnesty" },
     { label: "LinkedIn", handle: "Tim De Wasch", url: "https://www.linkedin.com/in/tim-de-wasch-329a77234/" },
@@ -50,7 +50,7 @@ window.SITE = {
       { years: "2022", place: "Kobalt, Bruges", detail: "Internship: technical drawings & site supervision" },
       { years: "2021", place: "Hogeschool Rotterdam", detail: "Erasmus, minor 'Ontwerpen'" },
     ],
-    skills: ["ArchiCAD", "AutoCAD", "Rhinoceros 3D", "Blender", "Lumion", "Photoshop", "Illustrator", "InDesign", "Premiere Pro"],
+    skills: ["ArchiCAD", "AutoCAD", "Rhinoceros 3D", "SketchUp", "Blender", "Lumion", "Photoshop", "Illustrator", "InDesign", "Premiere Pro", "Claude"],
     other: ["3D printing", "Model making", "Technical drawing", "Video making"],
     languages: [
       { lang: "Dutch", level: "Native" },
