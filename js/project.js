@@ -47,7 +47,7 @@
 
   const facts = project.facts || {};
   const factsHtml = Object.keys(facts).length
-    ? `<dl class="project-facts">${Object.entries(facts)
+    ? `<dl class="project-facts reveal">${Object.entries(facts)
         .map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`)
         .join("")}</dl>`
     : "";
@@ -60,7 +60,7 @@
     .map((img) => (typeof img === "string" ? { src: img } : img))
     .map(
       (img) => `
-      <figure class="project-image${img.main ? " is-main" : ""}${img.fit === "contain" ? " is-contain" : ""}">
+      <figure class="project-image reveal${img.main ? " is-main" : ""}${img.fit === "contain" ? " is-contain" : ""}">
         <img src="${img.src}" alt="${img.title || project.title}" loading="lazy">
         ${img.title ? `<figcaption>${img.title}</figcaption>` : ""}
       </figure>`
