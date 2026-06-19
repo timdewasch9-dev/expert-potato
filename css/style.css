@@ -346,10 +346,10 @@ main.page { padding-top: var(--header-h); }
 .contact-list { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
 .contact-list li {
   display: flex; align-items: baseline; gap: 2rem;
-  padding: 1.6rem 1rem; margin: 0 -1rem; border-bottom: 1px solid var(--line);
+  padding: 1.6rem 0; border-bottom: 1px solid var(--line);
   transition: background 0.4s var(--ease), padding-left 0.4s var(--ease);
 }
-.contact-list li:hover { background: var(--paper-2); padding-left: 1.5rem; }
+.contact-list li:hover { background: var(--paper-2); padding-left: 0.5rem; }
 .contact-list li span {
   flex: 0 0 130px; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft);
 }
