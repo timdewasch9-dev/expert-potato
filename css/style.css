@@ -201,7 +201,6 @@ body.solid-header .site-header { mix-blend-mode: normal; color: var(--ink); }
   background: var(--paper-2);
   aspect-ratio: 4 / 3;
   border: 1px solid var(--line);
-  width: 86%;
   margin: 0;
 }
 .work-figure img {
