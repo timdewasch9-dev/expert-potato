@@ -224,8 +224,8 @@ window.PROJECTS = [
       { src: "assets/img/through-the-wall-5.jpg", title: "Site plan, recycle and reuse axonometry" },
       { src: "assets/img/through-the-wall-6.jpg", title: "Floorplan, workshops" },
       { src: "assets/img/through-the-wall-7.jpg", title: "Sections AA' and BB'" },
-      { src: "assets/img/through-the-wall-8.jpg", title: "Storage space, model 1/33", main: true, fit: "contain" },
-      { src: "assets/img/through-the-wall-9.jpg", title: "Workshop space, model 1/33", main: true, fit: "contain" },
+      { src: "assets/img/through-the-wall-8.jpg", title: "Storage space, model 1/33", fit: "contain" },
+      { src: "assets/img/through-the-wall-9.jpg", title: "Workshop space, model 1/33", fit: "contain" },
     ],
   },
 
