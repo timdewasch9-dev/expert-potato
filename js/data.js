@@ -22,8 +22,10 @@ window.SITE = {
   location: "Ghent · Bruges, Belgium",
   social: [
     { label: "Instagram", handle: "@timnesty", url: "https://instagram.com/timnesty" },
+    { label: "LinkedIn", handle: "Tim De Wasch", url: "https://www.linkedin.com/in/tim-de-wasch-329a77234/" },
   ],
-  // Optional CV / résumé link (set to "" to hide the button)
+  // Optional CV / résumé link (set to "" to hide the button). To add yours:
+  // put the PDF in assets/ (e.g. assets/cv.pdf) and set this to that path.
   cv: "",
 
   // ---- About page -----------------------------------------------------------
