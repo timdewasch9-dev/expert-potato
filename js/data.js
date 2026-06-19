@@ -80,7 +80,7 @@ window.PROJECTS = [
       Work: "Individual",
     },
     images: [
-      { src: "assets/img/resonant-growth-7.jpg", title: "Dining chamber, hero render", main: true },
+      { src: "assets/img/resonant-growth-7.jpg", title: "Dining chamber, skylight view", main: true },
       { src: "assets/img/mise-en-space-cover.jpg", title: "Methodology, concept drawing" },
       { src: "assets/img/mise-en-space-7.jpg", title: "Macro scale render, threshold" },
       { src: "assets/img/resonant-growth-6.jpg", title: "Macro scale render, corridor" },
@@ -111,7 +111,7 @@ window.PROJECTS = [
       Work: "With Renee Quataert",
     },
     images: [
-      { src: "assets/img/soft-parasite-5.jpg", title: "Corridor render", main: true },
+      { src: "assets/img/soft-parasite-5.jpg", title: "Interior render, column corridor", main: true },
       { src: "assets/img/soft-parasite-4.jpg", title: "Site plan" },
       { src: "assets/img/soft-parasite-7.jpg", title: "Corridor, concept sketch" },
       { src: "assets/img/soft-parasite-cover.jpg", title: "Exploded axonometric", main: true, fit: "contain" },
