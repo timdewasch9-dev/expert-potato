@@ -85,8 +85,6 @@ window.PROJECTS = [
       { src: "assets/img/mise-en-space-7.jpg", title: "Macro scale render, threshold" },
       { src: "assets/img/resonant-growth-6.jpg", title: "Macro scale render, corridor" },
       { src: "assets/img/mise-en-space-1.jpg", title: "Macro scale sketch, entering the chamber" },
-      { src: "assets/img/mise-en-space-3.jpg", title: "Meso diagram, meal as temporal sequence", main: true },
-      { src: "assets/img/mise-en-space-2.jpg", title: "Meso diagram, body orientation" },
       { src: "assets/img/mise-en-space-4.jpg", title: "Micro object, hydrogel dinnerset" },
       { src: "assets/img/mise-en-space-5.jpg", title: "Micro object, SCOBY leather coaster" },
       { src: "assets/img/mise-en-space-6.jpg", title: "Micro object, bioplastic glass" },
