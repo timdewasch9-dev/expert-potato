@@ -196,8 +196,13 @@ window.PROJECTS = [
     },
     images: [
       { src: "assets/img/reculture-1.jpg", title: "Site plan, axonometry", main: true },
-      { src: "assets/img/reculture-2.jpg", title: "Reculture interventions", main: true, fit: "contain" },
       { src: "assets/img/reculture-cover.jpg", title: "Gallery wall, concept sketch" },
+      { src: "assets/img/reculture-2-1.jpg", title: "Intervention, gallery wall in reused brick" },
+      { src: "assets/img/reculture-2-2.jpg", title: "Intervention, amphitheatre with planted seating" },
+      { src: "assets/img/reculture-2-3.jpg", title: "Intervention, playground composition" },
+      { src: "assets/img/reculture-2-4.jpg", title: "Intervention, circular conversation bench" },
+      { src: "assets/img/reculture-2-5.jpg", title: "Intervention, rainwater collection" },
+      { src: "assets/img/reculture-2-6.jpg", title: "Intervention, communal water basin" },
     ],
   },
   {
